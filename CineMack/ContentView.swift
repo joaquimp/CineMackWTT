@@ -1,20 +1,31 @@
 
-//
-//  ContentView.swift
-//  CineMack
-//
-//  Created by Joaquim Pessoa Filho on 13/04/25.
-//
+    //
+    //  ContentView.swift
+    //  CineMack
+    //
+    //  Created by Joaquim Pessoa Filho on 13/04/25.
+    //
 
 import SwiftUI
 
 struct ContentView: View {
     @State var valor = 0.0
-    @State var assentos = [false, false, false]
+    @State var assentos: [Bool] = Array(repeating: false, count: 68)
+    let adaptiveGridItem = [
+        GridItem(.fixed(30)),
+        GridItem(.fixed(30)),
+        GridItem(.fixed(30)),
+        GridItem(.fixed(30)),
+        GridItem(.fixed(30)),
+        GridItem(.fixed(30)),
+        GridItem(.fixed(30)),
+        GridItem(.fixed(30))
+    ]
+
     
     var body: some View {
         ZStack {
-            // Define a cor do fundo
+                // Define a cor do fundo
             Color("backgroundCineColor")
                 .ignoresSafeArea()
             
@@ -34,53 +45,40 @@ struct ContentView: View {
                         .fontWeight(.thin)
                     Spacer()
                     
-                    // Assentos (v1)
-                    VStack {
-                        HStack {
-                            // Assento selecionado
+                    
+                    
+                    // Versão LazyGrid (v3)
+                    LazyVGrid(columns: adaptiveGridItem, spacing: 5) {
+                        ForEach(Array(assentos.enumerated()), id: \.offset) { index, element in
+                            
                             Button {
-                                assentos[0].toggle()
-                                if assentos[0] == true {
+                                assentos[index].toggle()
+                                if assentos[index] == true {
                                     valor += 25
                                 } else {
                                     valor -= 25
                                 }
+                                
                             } label: {
-                                if assentos[0] == true {
-                                    RoundedRectangle(cornerRadius: 12)
+                                if assentos[index] == true {
+                                    RoundedRectangle(cornerRadius: 10)
                                         .fill(Color("primaryCineColor"))
-                                        .frame(maxWidth: 40, maxHeight: 40)
+                                        .frame(width: 30, height: 30)
+                                    
                                 } else {
-                                    RoundedRectangle(cornerRadius: 12)
+                                    RoundedRectangle(cornerRadius: 10)
                                         .fill(Color("availableCineColor"))
-                                        .frame(maxWidth: 40, maxHeight: 40)
+                                        .frame(width: 30, height: 30)
                                 }
-                            }
-
-                            // Assento disponivel
-                            Button {
-                                print("Assento escolhido")
-                            } label: {
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(Color("availableCineColor"))
-                                    .frame(maxWidth: 40, maxHeight: 40)
-                            }
-
-                            // Assento indisponivel
-                            Button {
-                                print("Assento escolhido")
-                            } label: {
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(Color("unavailableCineColor"))
-                                    .frame(maxWidth: 40, maxHeight: 40)
                             }
                         }
                     }
                     
                     
+                    
                     Spacer()
                     
-                    // Tela
+                        // Tela
                     VStack {
                         Text("tela")
                         Rectangle()
@@ -125,3 +123,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
