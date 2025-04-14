@@ -3,23 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9FD1D34B2DADAA320022BAD6 /* CineMackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1D34A2DADAA320022BAD6 /* CineMackApp.swift */; };
+		9FD1D34D2DADAA320022BAD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1D34C2DADAA320022BAD6 /* ContentView.swift */; };
+		9FD1D34F2DADAA330022BAD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD1D34E2DADAA330022BAD6 /* Assets.xcassets */; };
+		9FD1D3592DADAA770022BAD6 /* LegendaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1D3582DADAA770022BAD6 /* LegendaView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		7549502A2DAC3B3B00570275 /* CineMack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineMack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD1D3472DADAA320022BAD6 /* CineMack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineMack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD1D34A2DADAA320022BAD6 /* CineMackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineMackApp.swift; sourceTree = "<group>"; };
+		9FD1D34C2DADAA320022BAD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9FD1D34E2DADAA330022BAD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FD1D3582DADAA770022BAD6 /* LegendaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegendaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		7549502C2DAC3B3B00570275 /* CineMack */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CineMack;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		754950272DAC3B3B00570275 /* Frameworks */ = {
+		9FD1D3442DADAA320022BAD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,107 +32,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		754950212DAC3B3B00570275 = {
+		9FD1D33E2DADAA320022BAD6 = {
 			isa = PBXGroup;
 			children = (
-				7549502C2DAC3B3B00570275 /* CineMack */,
-				7549502B2DAC3B3B00570275 /* Products */,
+				9FD1D3492DADAA320022BAD6 /* CineMack */,
+				9FD1D3482DADAA320022BAD6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7549502B2DAC3B3B00570275 /* Products */ = {
+		9FD1D3482DADAA320022BAD6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7549502A2DAC3B3B00570275 /* CineMack.app */,
+				9FD1D3472DADAA320022BAD6 /* CineMack.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9FD1D3492DADAA320022BAD6 /* CineMack */ = {
+			isa = PBXGroup;
+			children = (
+				9FD1D3582DADAA770022BAD6 /* LegendaView.swift */,
+				9FD1D34A2DADAA320022BAD6 /* CineMackApp.swift */,
+				9FD1D34C2DADAA320022BAD6 /* ContentView.swift */,
+				9FD1D34E2DADAA330022BAD6 /* Assets.xcassets */,
+			);
+			path = CineMack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		754950292DAC3B3B00570275 /* CineMack */ = {
+		9FD1D3462DADAA320022BAD6 /* CineMack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 754950352DAC3B3D00570275 /* Build configuration list for PBXNativeTarget "CineMack" */;
+			buildConfigurationList = 9FD1D3552DADAA330022BAD6 /* Build configuration list for PBXNativeTarget "CineMack" */;
 			buildPhases = (
-				754950262DAC3B3B00570275 /* Sources */,
-				754950272DAC3B3B00570275 /* Frameworks */,
-				754950282DAC3B3B00570275 /* Resources */,
+				9FD1D3432DADAA320022BAD6 /* Sources */,
+				9FD1D3442DADAA320022BAD6 /* Frameworks */,
+				9FD1D3452DADAA320022BAD6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				7549502C2DAC3B3B00570275 /* CineMack */,
-			);
 			name = CineMack;
-			packageProductDependencies = (
-			);
 			productName = CineMack;
-			productReference = 7549502A2DAC3B3B00570275 /* CineMack.app */;
+			productReference = 9FD1D3472DADAA320022BAD6 /* CineMack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		754950222DAC3B3B00570275 /* Project object */ = {
+		9FD1D33F2DADAA320022BAD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
-				LastUpgradeCheck = 1630;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					754950292DAC3B3B00570275 = {
-						CreatedOnToolsVersion = 16.3;
+					9FD1D3462DADAA320022BAD6 = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 754950252DAC3B3B00570275 /* Build configuration list for PBXProject "CineMack" */;
+			buildConfigurationList = 9FD1D3422DADAA320022BAD6 /* Build configuration list for PBXProject "CineMack" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 754950212DAC3B3B00570275;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
-			productRefGroup = 7549502B2DAC3B3B00570275 /* Products */;
+			mainGroup = 9FD1D33E2DADAA320022BAD6;
+			productRefGroup = 9FD1D3482DADAA320022BAD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				754950292DAC3B3B00570275 /* CineMack */,
+				9FD1D3462DADAA320022BAD6 /* CineMack */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		754950282DAC3B3B00570275 /* Resources */ = {
+		9FD1D3452DADAA320022BAD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD1D34F2DADAA330022BAD6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		754950262DAC3B3B00570275 /* Sources */ = {
+		9FD1D3432DADAA320022BAD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD1D34D2DADAA320022BAD6 /* ContentView.swift in Sources */,
+				9FD1D3592DADAA770022BAD6 /* LegendaView.swift in Sources */,
+				9FD1D34B2DADAA320022BAD6 /* CineMackApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		754950332DAC3B3D00570275 /* Debug */ = {
+		9FD1D3532DADAA330022BAD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -160,11 +171,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 34E95R7U23;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -178,22 +187,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		754950342DAC3B3D00570275 /* Release */ = {
+		9FD1D3542DADAA330022BAD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -224,11 +231,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 34E95R7U23;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -236,24 +241,24 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		754950362DAC3B3D00570275 /* Debug */ = {
+		9FD1D3562DADAA330022BAD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 34E95R7U23;
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -261,7 +266,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -275,14 +279,14 @@
 			};
 			name = Debug;
 		};
-		754950372DAC3B3D00570275 /* Release */ = {
+		9FD1D3572DADAA330022BAD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 34E95R7U23;
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -290,7 +294,6 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,25 +310,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		754950252DAC3B3B00570275 /* Build configuration list for PBXProject "CineMack" */ = {
+		9FD1D3422DADAA320022BAD6 /* Build configuration list for PBXProject "CineMack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				754950332DAC3B3D00570275 /* Debug */,
-				754950342DAC3B3D00570275 /* Release */,
+				9FD1D3532DADAA330022BAD6 /* Debug */,
+				9FD1D3542DADAA330022BAD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		754950352DAC3B3D00570275 /* Build configuration list for PBXNativeTarget "CineMack" */ = {
+		9FD1D3552DADAA330022BAD6 /* Build configuration list for PBXNativeTarget "CineMack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				754950362DAC3B3D00570275 /* Debug */,
-				754950372DAC3B3D00570275 /* Release */,
+				9FD1D3562DADAA330022BAD6 /* Debug */,
+				9FD1D3572DADAA330022BAD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 754950222DAC3B3B00570275 /* Project object */;
+	rootObject = 9FD1D33F2DADAA320022BAD6 /* Project object */;
 }
