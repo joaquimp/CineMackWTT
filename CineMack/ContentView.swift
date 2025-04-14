@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  CineMack
@@ -8,6 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var valor = 0.0
+    @State var assentos = [false, false, false]
+    
     var body: some View {
         ZStack {
             // Define a cor do fundo
@@ -30,19 +34,29 @@ struct ContentView: View {
                         .fontWeight(.thin)
                     Spacer()
                     
-                    //Assentos
-                    // Estudar ForEach
+                    // Assentos (v1)
                     VStack {
                         HStack {
                             // Assento selecionado
                             Button {
-                                print("Assento escolhido")
+                                assentos[0].toggle()
+                                if assentos[0] == true {
+                                    valor += 25
+                                } else {
+                                    valor -= 25
+                                }
                             } label: {
-                                RoundedRectangle(cornerRadius: 12)
-                                    .fill(Color("primaryCineColor"))
-                                    .frame(maxWidth: 40, maxHeight: 40)
+                                if assentos[0] == true {
+                                    RoundedRectangle(cornerRadius: 12)
+                                        .fill(Color("primaryCineColor"))
+                                        .frame(maxWidth: 40, maxHeight: 40)
+                                } else {
+                                    RoundedRectangle(cornerRadius: 12)
+                                        .fill(Color("availableCineColor"))
+                                        .frame(maxWidth: 40, maxHeight: 40)
+                                }
                             }
-                            
+
                             // Assento disponivel
                             Button {
                                 print("Assento escolhido")
@@ -51,7 +65,7 @@ struct ContentView: View {
                                     .fill(Color("availableCineColor"))
                                     .frame(maxWidth: 40, maxHeight: 40)
                             }
-                            
+
                             // Assento indisponivel
                             Button {
                                 print("Assento escolhido")
@@ -63,6 +77,7 @@ struct ContentView: View {
                         }
                     }
                     
+                    
                     Spacer()
                     
                     // Tela
@@ -72,10 +87,10 @@ struct ContentView: View {
                             .fill(Color("secondaryCineColor"))
                             .frame(maxWidth: .infinity, maxHeight: 16)
                     }
-                    .padding(.top, 40)
+                    .padding(.top, 20)
                     
                     LegendaView()
-                        .padding([.top, .bottom], 40)
+                        .padding([.top, .bottom], 20)
                     
                     Button {
                         print("comprou")
@@ -83,7 +98,7 @@ struct ContentView: View {
                         VStack {
                             Text("Comprar")
                                 .font(.title2)
-                            Text("R$ 125,00")
+                            Text("R$ \(valor, specifier: "%.2f")")
                                 .font(.caption)
                         }
                         .frame(maxWidth: .infinity)
@@ -93,7 +108,7 @@ struct ContentView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 16))
                         
                     }
-
+                    
                 }
                 .padding([.trailing, .leading], 20)
                 .padding(.bottom, 40)
